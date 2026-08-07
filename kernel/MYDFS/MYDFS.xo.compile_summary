@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jan 13 21:44:15 2026",
+ "timestampMillis": "1768311855505",
+ "buildStep": {
+  "cmdId": "5c653de9-0b15-4782-9ecd-4bf6c0f254b3",
+  "name": "v++",
+  "logFile": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS/MYDFS.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --vivado.prop run.impl_1.STEPS.PHYS_OPT_DESIGN.IS_ENABLED=true --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw --compile -I../src --config MYDFS-compile.cfg -obuild/MYDFS.xo ../src/MYDFS_RE_CU06.cpp ",
+  "args": [
+   "--target",
+   "hw",
+   "--compile",
+   "-I../src",
+   "--config",
+   "MYDFS-compile.cfg",
+   "-obuild/MYDFS.xo",
+   "../src/MYDFS_RE_CU06.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/MYDFS-compile.cfg",
+    "content": "platform=xilinx_u200_gen3x16_xdma_2_202110_1\nsave-temps=1\nkernel=MYDFS\noptimize=2\nmessageDb=build/MYDFS.mdb\ntemp_dir=build\nreport_dir=build/reports\nlog_dir=build/logs\n\n[advanced]\nmisc=solution_name=MYDFS\n\n[hls]\nmax_memory_ports=MYDFS"
+   }
+  ],
+  "cwd": "/home/fpga/bxd/three/CU06_kernels/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 13 21:44:15 2026",
+ "timestampMillis": "1768311855506",
+ "status": {
+  "cmdId": "5c653de9-0b15-4782-9ecd-4bf6c0f254b3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jan 13 21:44:22 2026",
+ "timestampMillis": "1768311862867",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_gen3x16_xdma_2_202110_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_2_202110_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "MYDFS",
+     "file": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/fpga/bxd/three/CU06_kernels/src/MYDFS_RE_CU06.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.1. SW Build 3860322 on 2023-05-04-06:32:48"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jan 13 21:44:22 2026",
+ "timestampMillis": "1768311862871",
+ "buildStep": {
+  "cmdId": "91a9ef5a-3e8a-440c-8141-78e94006cb8a",
+  "name": "vitis_hls",
+  "logFile": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS/MYDFS/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS/MYDFS/MYDFS.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS/MYDFS/MYDFS.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/fpga/bxd/three/CU06_kernels/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 13 21:44:22 2026",
+ "timestampMillis": "1768311862871",
+ "status": {
+  "cmdId": "91a9ef5a-3e8a-440c-8141-78e94006cb8a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951006",
+ "status": {
+  "cmdId": "91a9ef5a-3e8a-440c-8141-78e94006cb8a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951044",
+ "report": {
+  "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS/MYDFS/MYDFS/solution/.autopilot/db/MYDFS.design.xml",
+  "name": "MYDFS",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951045",
+ "report": {
+  "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS/MYDFS/MYDFS/solution/.autopilot/db/.message_syn.xml",
+  "name": "MYDFS",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951047",
+ "report": {
+  "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/reports/MYDFS/hls_reports/MYDFS_csynth.rpt",
+  "name": "MYDFS",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951048",
+ "report": {
+  "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS/MYDFS/MYDFS/solution/syn/report/MYDFS_csynth.xml",
+  "name": "MYDFS",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951077",
+ "report": {
+  "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/reports/MYDFS/system_estimate_MYDFS.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951396",
+ "status": {
+  "cmdId": "5c653de9-0b15-4782-9ecd-4bf6c0f254b3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951508",
+ "report": {
+  "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/reports/MYDFS/MYDFS_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jan 13 21:45:51 2026",
+ "timestampMillis": "1768311951509",
+ "report": {
+  "path": "/home/fpga/bxd/three/CU06_kernels/Hardware/build/MYDFS_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

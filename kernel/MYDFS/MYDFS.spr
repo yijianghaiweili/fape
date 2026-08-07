@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MYDFS" dir="">
+  <FileSets>
+    <FileSet Name="kernel_MYDFS" Type="DesignSrcs">
+      <File Path="/home/fpga/bxd/three/CU06_kernels/src/MYDFS_RE_CU06.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>
