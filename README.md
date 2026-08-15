@@ -6,6 +6,7 @@ We evaluate the scalability of FAPE using 2, 4, 6, 8, and 10 CUs under identical
 
 PEFP clock-frequency and resource-utilization report:
 <img width="400" height="78" alt="image" src="https://github.com/user-attachments/assets/d6b6293a-8535-46bb-a56b-507c29f1a2e7" />
+
 <img width="515" height="38" alt="image" src="https://github.com/user-attachments/assets/0cc4be2b-2303-46cd-a6d6-34c294248dc2" />
 
 
