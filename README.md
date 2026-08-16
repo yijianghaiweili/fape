@@ -1,6 +1,6 @@
 # fape
 This repository provides the implementation and experimental artifacts for the paper "FAPE: Efficient FPGA Acceleration for k-Hop Constrained s-t Simple Path Enumeration".
-
+We present the additional experiements for rebuttal as following
 We evaluate the scalability of FAPE using 2, 4, 6, 8, and 10 CUs under identical query workloads. The bars report the total query time for different hop constraints, while the dashed line shows the geometric-mean speedup over the 2-CU configuration. Overall, increasing the number of CUs reduces the total query time, particularly for computation-intensive workloads. With 10 CUs, FAPE achieves geometric-mean speedups of 2.07× and 2.05× on RT and ES, respectively. The scaling benefit is limited for lightweight queries because fixed execution and synchronization overheads become dominant, and the marginal improvement gradually decreases at larger CU counts. These results demonstrate that FAPE supports configurable CU scaling: six CUs provide a favorable performance-to-resource tradeoff for the main evaluation, while additional CUs can be deployed when lower query latency is prioritized and sufficient hardware resources are available.
 <img width="3681" height="1230" alt="cu_scaling_query_time" src="https://github.com/user-attachments/assets/f5500367-3d8d-4de0-9816-c1cef6a0c815" />
 
