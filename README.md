@@ -12,7 +12,7 @@ The clock-frequency and resource-utilization reports of both PEFP and FAPE are o
 Under the same FPGA platform and toolchain, PEFP achieves only 179.8 MHz under a 300-MHz target, whereas FAPE successfully meets 300 MHz. The corresponding resource-utilization reports are also provided to show the hardware resource usage of both implementations. These results provide direct implementation-level evidence of the architectural differences between PEFP and FAPE.
 
 PEFP：
-<p><img width="528" height="100" alt="image" src="https://github.com/user-attachments/assets/c52a407f-57b3-4cc6-bdbc-5c3254509237" /></p>
+<p><img width="520" height="100" alt="image" src="https://github.com/user-attachments/assets/c52a407f-57b3-4cc6-bdbc-5c3254509237" /></p>
 <p><img width="589" height="45" alt="image" src="https://github.com/user-attachments/assets/0cc4be2b-2303-46cd-a6d6-34c294248dc2" /></p>
 
 FAPE:
